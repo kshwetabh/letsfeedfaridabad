@@ -1,5 +1,5 @@
-# baseurl = "/"
-baseurl = ""
+baseurl = "https://kshwetabh.gitlab.io/letsfeedfaridabad/"
+# baseurl = ""
 title = "Let's Feed Faridabad"
 theme = "hugo-universal-theme"
 # themesDir = "../.."
