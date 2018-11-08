@@ -1,5 +1,5 @@
-baseurl = "/"
-# baseurl = ""
+# baseurl = "/"
+baseurl = ""
 title = "Let's Feed Faridabad"
 theme = "hugo-universal-theme"
 # themesDir = "../.."
