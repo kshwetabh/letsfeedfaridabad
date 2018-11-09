@@ -74,8 +74,8 @@ paginate = 10
 [params]
     viewMorePostLink = "/blog/"
     author = "inspiredbits.org"
-    defaultKeywords = ["letsfeedfaridabad", "charity", "charitable", "ngo"]
-    defaultDescription = "Site template made by devcows using hugo"
+    defaultKeywords = ["letsfeedfaridabad", "charity", "charitable", "ngo", "faridabad", "haryana"]
+    defaultDescription = "Built by inspiredbits.org using hugo"
 
     # Google Maps API key (if not set will default to not passing a key.)
     googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
@@ -96,7 +96,7 @@ paginate = 10
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io email
-    email = "letsfeedfaridabad@gmail.com"
+    email = "kshwetabh@gmail.com"
 
     about_us = "<p>**Provide a summary of the group or community..**</p>"
     copyright = "Copyright (c) 2018 - 2019, LetsFeedFaridabad; all rights reserved."
@@ -174,3 +174,8 @@ paginate = 10
     enable = true
     title = "From our blog"
     subtitle = "Recent Events, Meetups and Drives."
+
+[params.contact]
+    enable = true
+    image = "img/contact-page-banner.jpg"
+    alt = "contact page banner"

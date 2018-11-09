@@ -1,0 +1,93 @@
+<div class="container contact-page" id="contact">
+
+    <div class="row">
+        <div class="col-md-4">
+            {{ if isset .Site.Params "contact" }}
+            {{ if .Site.Params.contact.enable }}
+                <img class="img-responsive contact-page-banner" style="opacity:.7;border-radius: 8px;"  src="{{ .Site.BaseURL}}{{ .Site.Params.contact.image }}" alt="{{ .Site.Params.contact.alt }}">
+            {{ end }}
+            {{ end }}
+        </div>
+        <div class="col-md-8">
+            <section>
+
+                {{ .Content }}
+
+                {{ if isset .Site.Params "email" }}
+
+                <div class="heading">
+                  <h3>{{ i18n "contactForm" }}</h3>
+                </div>
+
+                <div id="contact-message"></div>
+
+                <form class="contact-form" method="post" action="https://formspree.io/{{ .Site.Params.email }}">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                              <label for="name">{{ i18n "contactName" }}</label>
+                                <input type="text" class="form-control" name="name" id="name" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="email">{{ i18n "contactMail" }}</label>
+                                <input type="text" class="form-control" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <label for="message">{{ i18n "contactMessage" }}</label>
+                                <textarea id="message" class="form-control" name="message" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 text-center">
+                          <button type="submit" class="btn btn-template-main"><i class="fa fa-envelope-o"></i>{{ i18n "contactSend" }}</button>
+
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </form>
+
+                {{ end }}
+
+            </section>
+
+        </div>
+        <!-- /.row -->
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            {{ if isset .Site.Params "address" }}
+            <section>
+                <h3 class="text-uppercase"> {{ i18n "contactAddrTitle" }}</h3>
+                {{ .Site.Params.address | safeHTML }}
+            </section>
+            {{ end }}
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <section>
+                <h3 class="text-uppercase">Contact Us</h3>
+                <ul class="contact-page-social">
+                    <li>
+                        <i class="fa fa-2x fa-comments-o"></i> &nbsp; WhatsApp Direct Contact <a href="https://api.whatsapp.com/send?phone=9999411300" target="_blank">9999411300</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-2x fa-comments-o"></i> &nbsp; WhatsApp Group - <span class="contact-page-social">The Lets Feed Faridabad</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-2x fa-facebook"></i> &nbsp; Facebook Group - <a href="https://www.facebook.com/groups/letsfeedfaridabad/" target="_blank">Lets Feed Faridabad</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-2x fa-envelope"></i> &nbsp; Email - <a href="mailto:letsfeedfaridabad@gmail.com" target="_blank">letsfeedfaridabad@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-2x fa-globe"></i> &nbsp; Website - <a href="letsfeedfaridabad.org" target="_blank">letsfeedfaridabad.org</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!-- /.row -->
+</div>
