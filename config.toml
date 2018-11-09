@@ -118,7 +118,7 @@ paginate = 10
 
 # Enable or disable top bar with social icons
 [params.topbar]
-    enable = true
+    enable = false
     text = """<p class="hidden-sm hidden-xs">Contact us on +91 999 941 1300 or letsfeedfaridabad@gmail.com.</p>"""
 
 # Enable and disable widgets for the right sidebar
