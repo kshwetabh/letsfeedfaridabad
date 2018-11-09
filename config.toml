@@ -1,8 +1,6 @@
 baseurl = "https://kshwetabh.gitlab.io/letsfeedfaridabad/"
-# baseurl = ""
 title = "Let's Feed Faridabad"
 theme = "hugo-universal-theme"
-# themesDir = "../.."
 themesDir = "./themes"
 languageCode = "en-us"
 # Site language. Available translations in the theme's `/i18n` directory.
