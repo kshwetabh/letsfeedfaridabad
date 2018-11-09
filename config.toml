@@ -173,6 +173,7 @@ paginate = 10
     title = "From our blog"
     subtitle = "Recent Events, Meetups and Drives."
 
+# Config for Contact-Page
 [params.contact]
     enable = true
     image = "img/contact-page-banner.jpg"
