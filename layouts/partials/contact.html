@@ -4,7 +4,8 @@
         <div class="col-md-4">
             {{ if isset .Site.Params "contact" }}
             {{ if .Site.Params.contact.enable }}
-                <img class="img-responsive contact-page-banner" style="opacity:.7;border-radius: 8px;"  src="{{ .Site.BaseURL}}{{ .Site.Params.contact.image }}" alt="{{ .Site.Params.contact.alt }}">
+                <!-- trick to lazy load the images, javascript code defined in scripts.html  -->
+                <img class="img-responsive contact-page-banner" style="opacity:.7;border-radius: 8px;" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{ .Site.BaseURL}}{{ .Site.Params.contact.image }}" alt="{{ .Site.Params.contact.alt }}">
             {{ end }}
             {{ end }}
         </div>
@@ -13,12 +14,6 @@
 
                 {{ .Content }}
 
-                <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfbKAvvS-ctJNkgGVJzxputvmLrOsgVWehrDb5TxPJkaH0vyA/viewform?embedded=true" 
-                    width="640" height="751" frameborder="0" marginheight="0" marginwidth="0">
-                    Loading...
-                </iframe> -->
-
-
                 {{ if isset .Site.Params "email" }}
 
                 <div class="heading">
@@ -26,7 +21,7 @@
                 </div>
 
                 <div id="contact-message"></div>
-
+                <!-- Using google form to collect questions -->
                 <form class="contact-form" method="POST" target="hidden_iframe" id="mG61Hd" 
                     action="https://docs.google.com/forms/d/e/1FAIpQLSfbKAvvS-ctJNkgGVJzxputvmLrOsgVWehrDb5TxPJkaH0vyA/formResponse"
                     onsubmit="submitted=true;">
