@@ -44,7 +44,7 @@ ul.contact-page-social {
 }
 
 /* Override carousel h1 height to make it look good on mobile devices */
-@media (max-width: 991px) {
+@media only screen and (max-width: 600px) {
   .home-carousel h1 {
     height: 250px;
   }
