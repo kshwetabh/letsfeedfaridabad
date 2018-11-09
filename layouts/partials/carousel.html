@@ -14,8 +14,7 @@
                             {{ .description | safeHTML }}
                         </div>
                         <div class="col-sm-7">
-                            <!-- trick to lazy load the images, javascript code defined in scripts.html  -->
-                            <img class="img-responsive" style="opacity:.7;border-radius: 8px;" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{ .image }}" alt="">
+                            <img class="img-responsive" style="opacity:.7;border-radius: 8px;" src="{{ .image }}" alt="">
                         </div>
                     </div>
                 </div>
