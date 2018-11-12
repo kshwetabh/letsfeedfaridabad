@@ -1,4 +1,4 @@
-baseurl = "https://kshwetabh.gitlab.io/letsfeedfaridabad/"
+baseurl = "https://kshwetabh.github.io/letsfeedfaridabad/"
 title = "Let's Feed Faridabad"
 theme = "hugo-universal-theme"
 themesDir = "./themes"
