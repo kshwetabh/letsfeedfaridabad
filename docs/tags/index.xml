@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Let&#39;s Feed Faridabad</title>
+    <link>https://kshwetabh.github.io/letsfeedfaridabad/tags/</link>
+    <description>Recent content in Tags on Let&#39;s Feed Faridabad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Nov 2018 21:57:53 +0530</lastBuildDate>
+    
+	<atom:link href="https://kshwetabh.github.io/letsfeedfaridabad/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Event</title>
+      <link>https://kshwetabh.github.io/letsfeedfaridabad/tags/event/</link>
+      <pubDate>Sun, 04 Nov 2018 21:57:53 +0530</pubDate>
+      
+      <guid>https://kshwetabh.github.io/letsfeedfaridabad/tags/event/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kids</title>
+      <link>https://kshwetabh.github.io/letsfeedfaridabad/tags/kids/</link>
+      <pubDate>Sun, 04 Nov 2018 21:53:57 +0530</pubDate>
+      
+      <guid>https://kshwetabh.github.io/letsfeedfaridabad/tags/kids/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
